@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textviewall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Product"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RecyclerView"
+        android:layout_below="@+id/textviewall"
+        android:background="#ffffff"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/next_btn_1"
+        android:layout_below="@+id/RecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"
+        android:padding="10dp"/>
+</RelativeLayout>

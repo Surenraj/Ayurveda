@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B7D9F6"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rel_1"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order No. 123456"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: 13/08/2020"
+                android:layout_toRightOf="@+id/text1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="90dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_2"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/rel_1"
+            android:layout_height="95dp">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:id="@+id/imageview1"
+                app:cardCornerRadius="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="60dp"
+                    android:src="@drawable/nariamrut"
+                    android:padding="12dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Nari Amrut Capsule"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imageview1"
+                android:id="@+id/textview"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:id="@+id/textview2"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imageview1"
+                android:layout_below="@+id/textview"
+                android:layout_marginLeft="20dp"
+                android:text="2 pcs">
+
+            </TextView>
+            <TextView
+                android:layout_width="80dp"
+                android:textSize="15sp"
+                android:text="260 Rs."
+                android:id="@+id/textview3"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="55dp"
+                android:layout_toRightOf="@id/textview"
+                android:layout_height="wrap_content"
+                tools:ignore="DuplicateIds">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="#CDC7C7"
+                android:id="@+id/Divider"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/imageview1"
+                android:layout_below="@id/imageview1"
+                android:text="_______________________________________">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_3"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/rel_2"
+            android:layout_height="95dp">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:id="@+id/imageview2"
+                app:cardCornerRadius="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="60dp"
+                    android:src="@drawable/nariamrut"
+                    android:padding="12dp"
+                    ></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Nari Amrut Capsule"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imageview2"
+                android:id="@+id/textview1"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:id="@+id/textview3"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imageview2"
+                android:layout_below="@+id/textview1"
+                android:layout_marginLeft="20dp"
+                android:text="2 pcs">
+
+            </TextView>
+            <TextView
+                android:layout_width="80dp"
+                android:textSize="15sp"
+                android:text="260 Rs."
+                android:id="@+id/textview4"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="55dp"
+                android:layout_toRightOf="@id/textview1"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="#CDC7C7"
+                android:id="@+id/Divider1"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/imageview2"
+                android:layout_below="@id/imageview2"
+                android:text="_______________________________________">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_4"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/rel_3"
+            android:layout_height="95dp">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:id="@+id/imageview3"
+                app:cardCornerRadius="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="60dp"
+                    android:src="@drawable/relaxi_oil"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Dr. Relaxi Capsule"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imageview3"
+                android:id="@+id/textview2"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                tools:ignore="DuplicateIds">
+
+            </TextView>
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:id="@+id/textview4"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imageview3"
+                android:layout_below="@+id/textview2"
+                android:layout_marginLeft="20dp"
+                android:text="5 pcs"
+                tools:ignore="DuplicateIds">
+
+            </TextView>
+            <TextView
+                android:layout_width="80dp"
+                android:textSize="15sp"
+                android:text="1500 Rs."
+                android:id="@+id/textview5"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="55dp"
+                android:layout_toRightOf="@id/textview2"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="#CDC7C7"
+                android:id="@+id/Divider2"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/imageview3"
+                android:layout_below="@id/imageview3"
+                android:text="_______________________________________">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_5"
+            android:layout_below="@+id/rel_4"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lin5"
+                android:layout_width="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Details"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subtotal"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#706666"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment mode"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin6"
+                android:layout_toRightOf="@+id/lin5"
+                android:layout_width="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2020 Rs."
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150 Rs."
+                    android:layout_marginLeft="7dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00 Rs."
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prepaid"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_6"
+            android:layout_below="@+id/rel_5"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lin7"
+                android:layout_width="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/blue"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lin7"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:text="2370 Rs."/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_7"
+            android:layout_below="@+id/rel_6"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lin5"
+                android:layout_width="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="DuplicateIds">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Address"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anis Sunesra"
+                    android:textStyle="bold"
+                    android:layout_marginTop="13dp"
+
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rapl House, S.V.Road."
+
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jogeshwari(W)"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mumbai - 400051"
+                    android:textColor="@color/black"/>
+                <Button
+                    android:id="@+id/invoice"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="#46AEED"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingRight="20dp"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="20dp"
+                    android:text="Invoice"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lin5"
+                android:layout_marginTop="152dp"
+                android:paddingLeft="20dp"
+                android:background="#46AEED"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"
+                android:text="Re-Order"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/next_btn_assign3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:background="@color/purple_700"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"/>
+
+    </RelativeLayout>
+</ScrollView>
